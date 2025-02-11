@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID'); 
+        fbq('track', 'PageView');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-16">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-4 text-lg">Apply now and start your medical journey!</p>
+        <a href="#apply" class="mt-6 inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold">Apply Now</a>
+    </section>
+    
+    <!-- Why Study MBBS Abroad -->
+    <section class="container mx-auto py-12 px-4">
+        <h2 class="text-3xl font-semibold text-center">Why Study MBBS Abroad?</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-lg shadow">Affordable tuition fees</div>
+            <div class="p-6 bg-white rounded-lg shadow">Globally recognized degrees</div>
+            <div class="p-6 bg-white rounded-lg shadow">High-quality education</div>
+        </div>
+    </section>
+    
+    <!-- Top Countries -->
+    <section class="container mx-auto py-12 px-4">
+        <h2 class="text-3xl font-semibold text-center">Top MBBS Destinations</h2>
+        <div class="mt-6 grid md:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-lg shadow">Russia</div>
+            <div class="p-6 bg-white rounded-lg shadow">Uzbekistan</div>
+            <div class="p-6 bg-white rounded-lg shadow">Kazakhstan</div>
+            <div class="p-6 bg-white rounded-lg shadow">Philippines</div>
+            <div class="p-6 bg-white rounded-lg shadow">Georgia</div>
+            <div class="p-6 bg-white rounded-lg shadow">Kyrgyzstan</div>
+        </div>
+    </section>
+    
+    <!-- Admission Process -->
+    <section class="container mx-auto py-12 px-4">
+        <h2 class="text-3xl font-semibold text-center">Admission Process</h2>
+        <ol class="mt-6 list-decimal list-inside">
+            <li>Check eligibility criteria</li>
+            <li>Submit application form</li>
+            <li>Receive admission letter</li>
+            <li>Apply for a student visa</li>
+            <li>Fly to your university</li>
+        </ol>
+    </section>
+    
+    <!-- Lead Form -->
+    <section id="apply" class="container mx-auto py-12 px-4">
+        <h2 class="text-3xl font-semibold text-center">Apply Now</h2>
+        <form class="mt-6 bg-white p-6 rounded-lg shadow" id="leadForm">
+            <input type="text" id="name" placeholder="Full Name" class="w-full p-3 border rounded mb-4">
+            <input type="email" id="email" placeholder="Email" class="w-full p-3 border rounded mb-4">
+            <input type="tel" id="phone" placeholder="Phone" class="w-full p-3 border rounded mb-4">
+            <select id="country" class="w-full p-3 border rounded mb-4">
+                <option value="">Select Country</option>
+                <option>Russia</option>
+                <option>Uzbekistan</option>
+                <option>Kazakhstan</option>
+                <option>Philippines</option>
+                <option>Georgia</option>
+                <option>Kyrgyzstan</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded">Submit</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            if (!name || !email || !phone) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+</html>
